@@ -6,10 +6,11 @@ type Props = ViewProps
 
 export function Card({style, ...rest}:Props){
     const colors = useThemesColors()
-    return <View style={[style, styles, {backgroundColor:colors.lightGray}]} {...rest} />
+    return <View style={[style, styles, {backgroundColor:colors.white}]} {...rest} />
 }
 const styles= {
     borderRadius:8,
-    ...Shadows.dp2
+    ...Shadows.dp2,
+    overflow:'hidden'
 
 } satisfies ViewStyle

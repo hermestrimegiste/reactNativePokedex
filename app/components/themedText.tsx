@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
     caption:{
         fontSize:8,
         lineHeight:12,
-        alignSelf:'flex-end'
     },
     headline:{
         fontSize:24,
@@ -49,5 +48,5 @@ type Props =  TextProps & {
 
 export default function ThemedText( {variant, color, style,  ...rest}:Props){
     const colors = useThemesColors()
-    return <Text style={[styles[variant ?? 'body3'], {color:colors[color ?? "darkGray"]}]} {...rest} />
+    return <Text style={[styles[variant ?? 'body3'], {color:colors[color ?? "darkGray"]}, style]} {...rest} />
 }

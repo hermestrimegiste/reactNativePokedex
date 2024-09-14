@@ -12,7 +12,7 @@ export const Colors = {
         darkGray: "#212121",
         mediumGray: "#666666",
         lightGray: "#E0E0E0",
-        backgroundGray: "#121212",  // Exemple d'un fond différent pour le mode sombre
+        backgroundGray: "#EFEFEF",  // Exemple d'un fond différent pour le mode sombre
         white: "#FFFFFF"
     },
     type: {
